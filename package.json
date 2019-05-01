@@ -1,0 +1,35 @@
+{
+  "name": "socket-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "path": "src/lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^11.13.0",
+    "nodemon": "^1.18.10",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.4.2"
+  },
+  "dependencies": {
+    "@types/socket.io": "^2.1.2",
+    "@types/socket.io-client": "^1.4.32",
+    "absolutify": "^0.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "mongodb": "^3.2.3",
+    "mongoose": "^5.5.4",
+    "okrabyte": "^0.1.1",
+    "puppeteer": "^1.15.0",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0"
+  }
+}
